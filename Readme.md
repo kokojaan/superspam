@@ -1,4 +1,4 @@
-# 【BAAP JII 🔥】 【De𝘃𝗶𝗹 🥵】 【CHODNE】 【KI】 【MACHINE】
+# 【BAAP JII 🔥 CHODNE】 【KI】 【MACHINE】
 ## 🚀 Deploy on Heroku 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kokojaan/baapjii)
