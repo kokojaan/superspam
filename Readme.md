@@ -1,10 +1,8 @@
-# 【BAAP JII 🔥 CHODNE】 【KI】 【MACHINE】
+# 【BAAP JII 🔥🥵】
 ## 🚀 Deploy on Heroku 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kokojaan/baapjii)
-
-## String Session FOR  BOT AND IDS 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kokojaan/superspam)
 
 
-   - BOT STRING [![Run on Repl.it](https://repl.it/badge/github/YukkiBot/YukkiSpamBot)](https://replit.com/@hyperop6666/HYPER-SPAM-BOT-REPL#main.py)
-   - IDS STRING [![Run on Repl.it](https://repl.it/badge/github/YukkiBot/YukkiSpamBot)](https://replit.com/@hyperop6666/HYPER-REPL#main.py)
+
+
