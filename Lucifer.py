@@ -336,7 +336,7 @@ async def alive(event):
 
    ᏢᎽͲᎻϴΝ - 3.0
    ͲᎬᏞᎬͲᎻϴΝ - 1.0
-   ᏢᏞႮᏀᏆΝՏ - 8 ϴҒ 8
+   ᏢᏞႮᏀᏆΝՏ -30 / 30
    ᎠᎬᏙՏ - **[ Bro  ](Xd)
    ᎡᎬᏢϴ - KANGERS GAAR MARAO 😂😆
    ՏႮᏢᏢϴᎡͲ - **[ 🔥BAPP JII🔥](https://t.me/Baapjiiiiiiiiii)
@@ -426,7 +426,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("Chod dia sale ko 😂")
+                await event.edit("chud gya salaa😂")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -435,18 +435,18 @@ async def _(e):
 
 
 
-@luc.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc2.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc3.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc4.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc5.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc6.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc7.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc8.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc9.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc10.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@luc.on(events.NewMessage(incoming=True, pattern=r"\.fuck"))
+@luc2.on(events.NewMessage(incoming=True, pattern=r"\.fuck"))
+@luc3.on(events.NewMessage(incoming=True, pattern=r"\.fuck"))
+@luc4.on(events.NewMessage(incoming=True, pattern=r"\.fuck"))
+@luc5.on(events.NewMessage(incoming=True, pattern=r"\.fuck"))
+@luc6.on(events.NewMessage(incoming=True, pattern=r"\.fuck"))
+@luc7.on(events.NewMessage(incoming=True, pattern=r"\.fuck"))
+@luc8.on(events.NewMessage(incoming=True, pattern=r"\.fuck"))
+@luc9.on(events.NewMessage(incoming=True, pattern=r"\.fuck"))
+@luc10.on(events.NewMessage(incoming=True, pattern=r"\.fuck"))
 async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.fuck <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
@@ -478,79 +478,6 @@ async def spam(e):
                     await asyncio.sleep(0.0)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
-
-@luc.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc2.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc3.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc4.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc5.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc6.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc7.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc8.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc9.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc10.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
-    if e.sender_id in SMEX_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None)
-        Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        await e.get_reply_message()
-        if len(Ustad) == 2:
-            message = str(Ustad[1])
-            print(message)
-            a = await e.client.get_entity(message)
-            g = a.id
-            c = a.first_name
-            username = f"[{c}](tg://user?id={g})"
-            counter = int(Ustad[0])
-            for _ in range(counter):
-                reply = random.choice(RAID)
-                caption = f"{username} {reply}"
-                async with e.client.action(e.chat_id, "typing"):
-                    await e.client.send_message(e.chat_id, caption)
-                    await asyncio.sleep(0.0)
-        elif e.reply_to_msg_id:
-            a = await e.get_reply_message()
-            b = await e.client.get_entity(a.sender_id)
-            g = b.id
-            c = b.first_name
-            counter = int(Ustad[0])
-            username = f"[{c}](tg://user?id={g})"
-            for _ in range(counter):
-                reply = random.choice(RAID)
-                caption = f"{username} {reply}"
-                async with e.client.action(e.chat_id, "typing"):
-                    await e.client.send_message(e.chat_id, caption)
-                    await asyncio.sleep(0.0)
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None)
-
-
-@luc.on(events.NewMessage(incoming=True))
-@luc2.on(events.NewMessage(incoming=True))
-@luc3.on(events.NewMessage(incoming=True))
-@luc4.on(events.NewMessage(incoming=True))
-@luc5.on(events.NewMessage(incoming=True))
-@luc6.on(events.NewMessage(incoming=True))
-@luc7.on(events.NewMessage(incoming=True))
-@luc8.on(events.NewMessage(incoming=True))
-@luc9.on(events.NewMessage(incoming=True))
-@luc10.on(events.NewMessage(incoming=True))
-async def _(event):
-    global que
-    queue = que.get(event.sender_id)
-    if not queue:
-        return
-    async with event.client.action(event.chat_id, "typing"):
-        await asyncio.sleep(0.0)
-    async with event.client.action(event.chat_id, "typing"):
-        await event.client.send_message(
-            entity=event.chat_id,
-            message="""{}""".format(random.choice(RRAID)),
-            reply_to=event.message.id,
-        )
-
 
 
 @luc.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
@@ -585,7 +512,7 @@ async def ping(e):
 @luc10.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
-        text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\nRuk jaa muth maar leta hu 😂😆 ..."
+        text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\n wait for 5 min ..."
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
             await idk.disconnect()
@@ -643,7 +570,7 @@ async def restart(e):
 @luc10.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "🔥 ᏟϴᎷᎷᎪΝᎠՏ 🔥\n\n🔘ᏢᏆΝᏀ\n🔘ᎡᎬՏͲᎪᎡͲ\n🔘ᎫϴᏆΝ\n🔘ᏞᎬᎪᏙᎬ\n🔘ᏢᎫϴᏆΝ\n🔘ᏴᏆᏀՏᏢᎪᎷ\n🔘ᎡᎪᏆᎠ\n🔘ᎪᏞᏆᏙᎬ\n🔘ᎪᎠᎠՏႮᎠϴ\n\n\n      ᏴᎽ ༒  (🔥ᏴᎪᎪᏢ ᎫᏆᏆ ᎪΝᎠ ᎠᎬᏙᏆᏞ 🔥) ༒"
+       text = "🔥 ᏟϴᎷᎷᎪΝᎠՏ 🔥\n\n🔘ᏢᏆΝᏀ\n🔘ᎡᎬՏͲᎪᎡͲ\n🔘ᎫϴᏆΝ\n🔘ᏞᎬᎪᏙᎬ\n🔘ᏢᎫϴᏆΝ\n🔘fuck\n🔘ᎪᏞᏆᏙᎬ\n🔘ᎪᎠᎠՏႮᎠϴ\n\n\n      ᏴᎽ ༒  (🔥ᏴᎪᎪᏢ ᎫᏆᏆ ᎪΝᎠ KOKO 🔥) ༒"
        await e.reply(text, parse_mode=None, link_preview=None )
 
 
