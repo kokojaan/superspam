@@ -308,13 +308,13 @@ async def gifspam(e, smex):
     except Exception:
         pass
 
-"""""
 
-await event.client.send_file(event.chat_id,lucifer,caption=tf, force_document=False, link_preview=False)
 
-import time
 
-from time import sleep
+
+
+
+
 
 
 
