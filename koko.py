@@ -308,43 +308,12 @@ async def gifspam(e, smex):
     except Exception:
         pass
 
-ALIVE_PIC = "https://telegra.ph/file/169ced909cf18cda9bef2.png"
-import os
-lucifer = os.environ.get("ALIVE_PIC",None)
-if not lucifer:
- lucifer ="https://telegra.ph/file/169ced909cf18cda9bef2.png"
-@luc.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc2.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc3.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc4.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc5.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc6.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc7.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc8.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc9.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc10.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-####
-async def alive(event):
-  if event.sender_id in SMEX_USERS:
-    sed = await event.client.get_me()
-    kk = sed.first_name
-    k = sed.id
-    s = f"[{kk}](tg://user?id={k})"
-    tf = f"""
-**
-   ᎽϴႮᎡ ՏᏢᎪᎷ ᏴϴͲ ᏆՏ ᏔϴᎡᏦᏆΝᏀ 
+"""""
 
-   ᏢᎽͲᎻϴΝ - 3.0
-   ͲᎬᏞᎬͲᎻϴΝ - 1.0
-   ᏢᏞႮᏀᏆΝՏ -30 / 30
-   ᎠᎬᏙՏ - **[ Bro  ](Xd)
-   ᎡᎬᏢϴ - KANGERS GAAR MARAO 😂😆
-   ՏႮᏢᏢϴᎡͲ - **[ 🔥BAPP JII🔥](https://t.me/Baapjiiiiiiiiii)
-   ϴᏔΝᎬᎡ - **[ DEVIL 👿 ](https://telegra.ph/file/545dd8beed69906954035.jpg)
+await event.client.send_file(event.chat_id,lucifer,caption=tf, force_document=False, link_preview=False)
 
-"""
-    await event.client.send_file(event.chat_id,lucifer,caption=tf, force_document=False, link_preview=False)
 import time
+
 from time import sleep
 
 
